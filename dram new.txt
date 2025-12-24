@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Selamat Ulang Tahun DREAM 💖</title>
+
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #ff9a9e, #fad0c4);
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.35);
+    filter: blur(80px);
+    animation: float 6s infinite ease-in-out;
+  }
+  .glow:nth-child(1){ top:10%; left:20%; }
+  .glow:nth-child(2){ bottom:15%; right:25%; animation-delay:2s; }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+  }
+
+  .card {
+    position: relative;
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    z-index: 2;
+    max-width: 360px;
+    animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* Bagian Foto */
+  .photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff7eb3;
+    box-shadow: 0 0 20px rgba(255,126,179,0.8);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    color: #ff4b6e;
+    font-size: 26px;
+    text-shadow: 0 0 10px rgba(255,75,110,0.5);
+  }
+
+  h2 {
+    margin: 8px 0;
+    color: #d6336c;
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255,118,150,0.5);
+    transition: 0.3s;
+  }
+
+  button:hover { 
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(255,118,150,0.7);
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow"></div>
+
+<div class="card">
+  <img src="foto.jpg" alt="Dream" class="photo">
+  
+  <h1>Happy Birthday</h1>
+  <h2>DREAM 💖</h2>
+  
+  <p>Semoga di hari spesial ini, semua impianmu menjadi kenyataan. Tetaplah bersinar dan bahagia selalu! ✨</p>
+  
+  <button onclick="alert('I love you! ❤️')">Klik Untuk Pesan</button>
+</div>
+
+</body>
+</html>
